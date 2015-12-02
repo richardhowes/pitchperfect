@@ -31,20 +31,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         pauseRecordingButton.enabled = true
         recordButton.enabled = false
 
-//        let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
-//        
-//        // Setup the file for recording
-//        let recordingName = "my_audio.wav"
-//        let pathArray = [dirPath, recordingName]
-//        let filePath = NSURL.fileURLWithPathComponents(pathArray)
-        
-        // Record the audio
-//        let session = AVAudioSession.sharedInstance()
-//        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord)
-//        try! audioRecorder = AVAudioRecorder(URL: filePath!, settings: [:])
-//        audioRecorder.delegate = self
-//        audioRecorder.meteringEnabled = true
-//        audioRecorder.prepareToRecord()
         audioRecorder.record()
     }
     

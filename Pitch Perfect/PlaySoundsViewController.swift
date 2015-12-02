@@ -112,8 +112,6 @@ class PlaySoundsViewController: UIViewController {
         }
         
         // Attached and connect the neccesary components and initialise
-        //audioEngine.attachNode(changePitchEffect)
-        
         audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
         try! audioEngine.start()
         
